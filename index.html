@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <!-- Link interno do arquivo ICON e do arquivo CSS -->
+    <link rel="icon" href="./image/patamon-digimon.ico" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <main>
+        <!-- Vídeo (oculto inicialmente) -->
+        <video id="video" src="./image/METALGREYMON MEGA DIGIVOLVE TO WARGREYMON - Digimon Adventure 2020.mp4" type="video/mp4" loop>
+            Seu navegador não suporta a reprodução de vídeo.
+        </video>
+
+        <!-- Botão de Reprodução -->
+        <button id="playButton" style="position: absolute; left: 0; top: 0; width: 50px; height: 50px;">Play</button>
+
+        <!-- ... (resto do seu conteúdo) ... -->
+    </main>
+    <main>
+        <!-- Imagem da pokedex -->
+        <img src="#" alt="pokemon" class="pokemon_image">
+        <div class="type-container">
+    <div class="type-block">
+        <span class="pokemon_type1">Tipo 1</span>
+    </div>
+    <div class="type-block">
+        <span class="pokemon_type2">Tipo 2</span>
+    </div>
+</div>
+        <!-- H1 com 2 spans para receber o nome e número dos pokemons -->
+        <h1 class="pokemon_data">
+            
+            <span class="pokemon_number"></span> -
+            <span class="pokemon_name"></span>
+        </h1>
+
+        <!-- Um formulário para servir de buscador dos pokemons -->
+        <form class="form">
+            <input type="search" class="input_search" placeholder="Name or Number" required />
+        </form>
+        <div class="pokemon_detail">
+            <span class="ability" data-ability-="1">type plant</span>
+            <span class="ability" data-ability-="2">type plant</span>
+            <span class="ability" data-ability-="3">type plant</span>
+            <span class="ability" data-ability-="4">type plant</span>
+        </div>
+        <!-- Div com os botões Previous e Next, para avançar ou regredir ao pokemon seguinte ou anterior -->
+        <div class="buttons">
+            <button class="btn-prev">Prev &lt;</button>
+            <button class="btn-next">Next &gt;</button>
+        </div>
+        <img src="./image/pokedex.png" alt="pokedex" />
+    </main>
+
+    <!-- link interno JS -->
+    <script src="./js/autoplay.js"></script>
+    
+    <script src="./js/colors.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
